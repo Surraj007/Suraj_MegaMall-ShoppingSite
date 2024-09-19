@@ -6,16 +6,25 @@
 
 #navbar-title{
     color: white;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 550;
     text-decoration: none;
 }
 
 header{
-    height: 60px;
+    height: 75px;
     background-color: rgb(19, 42, 72);
     text-align: center;
 }
+
+#home-btn{
+position: absolute;
+left: 96%;
+bottom: 93%;
+font-size: 28px;
+color: aliceblue;
+}
+
 .navbar{
     padding-top: 18px;
 }

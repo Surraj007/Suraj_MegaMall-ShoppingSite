@@ -6,14 +6,15 @@
 
 #navbar-title{
     color: white;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 550;
     text-decoration: none;
 }
 
 header{
-    height: 75px;
-    background-color: rgb(19, 42, 72);
+    height: 85px;
+    background: rgb(82,82,89);
+    background: linear-gradient(0deg, rgba(82,82,89,1) 0%, rgba(6,5,3,1) 89%);
     text-align: center;
 }
 
@@ -50,8 +51,8 @@ color: aliceblue;
 }
 
 #shopping-poster{
-    margin-top: 30px;
-    width: 100vw;
+    margin-top: 15px;
+    width: 100%;
     height: auto;
 }
 

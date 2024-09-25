@@ -1,0 +1,116 @@
+.mens-section {
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.tshirt-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tshirt-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.tshirt-item:hover {
+    transform: scale(1.05);
+}
+
+.tshirt-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.tshirt-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #e63946;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.breadcrumbs {
+    font-size: 0.9em;
+    padding: 10px 0;
+    color: #333;
+}
+
+.breadcrumbs a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: #666;
+}
+
+
+.add-to-cart {
+    background-color: #4b4e53;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #060607;
+}
+
+.cart-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cart-link {
+    color: #333;
+    text-decoration: none;
+}
+
+#cart-count {
+    font-weight: bold;
+    color: #e63946;
+}

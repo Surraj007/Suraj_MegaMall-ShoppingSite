@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="../T-shirt/halfstyle.css">
+    <style>
+        .cart-items {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item h3 {
+            margin: 0;
+        }
+        .cart-item .price {
+            color: #e63946;
+        }
+        .clear-cart {
+            background-color: #e63946;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="breadcrumbs">
+        <a href="../../index.html">Home</a> -
+        <a href="../../t-shirts.html">T-Shirts</a> -
+        <a href="../../shirts.html">Shirts</a> -
+        <a href="../../jeans.html">Jeans</a> -
+        <a href="../../shoes.html">Shoes</a> -
+        <a href="../../sunglasses.html">Sunglasses</a> -
+        <a href="../../perfumes.html">Perfumes</a>    
+        
+    </div>
+
+    <section id="mens-tshirts" class="mens-section">
+        <div class="section-header">
+            <h2>YOUR CART</h2>
+            </section>
+
+    <div class="cart-items" id="cart-items"></div>
+    <button class="clear-cart" id="clear-cart">Clear Cart</button>
+
+    <script>
+        const cartItemsElement = document.getElementById('cart-items');
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function displayCartItems() {
+            cartItemsElement.innerHTML = '';
+            cart.forEach((item, index) => {
+                const cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+                cartItemElement.innerHTML = `
+                    <h3>${item.name}</h3>
+                    <span class="price">${item.price}</span>
+                `;
+                cartItemsElement.appendChild(cartItemElement);
+            });
+        }
+
+        document.getElementById('clear-cart').addEventListener('click', () => {
+            localStorage.removeItem('cart');
+            cart = [];
+            displayCartItems();
+        });
+
+        displayCartItems();
+    </script>
+
+</body>
+</html>

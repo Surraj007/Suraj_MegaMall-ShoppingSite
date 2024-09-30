@@ -114,3 +114,24 @@
     font-weight: bold;
     color: #e63946;
 }
+
+.place-order{
+    
+        background-color: #fe2626;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        display:inline-flex;
+        position: absolute;
+        left: 45%;
+        transition: background-color 0.3s ease;
+    }
+    
+    .place-order:hover {
+        background-color: #601717;
+    } 

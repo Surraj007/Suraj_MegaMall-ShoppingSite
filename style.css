@@ -131,6 +131,93 @@ h2{
     color: #e63946;
 }
 
+/*ADRESS*/
+
+/* Container for the form */
+.container {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form fields styling */
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #6c63ff; /* Custom focus color */
+}
+
+/* Styling for textarea field */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Button styling */
+.submit-btn {
+    background-color: #f93535;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #551717;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+}
+
 
 footer{
     height: 50px;
@@ -138,4 +225,109 @@ footer{
     background-color: black;
     color: aliceblue;
     text-align: center;
+}
+
+/*FOR PAYMENT SECTION*/
+
+.payment-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.payment-method {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.payment-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.payment-details {
+    margin-top: 15px;
+}
+
+.payment-details input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.expiry-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry-cvv input {
+    width: 48%;
+}
+
+#place-order-btn {
+    width: 100%;
+    background-color: #f62525;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.5s ease;
+}
+
+#place-order-btn:hover {
+    background-color: #4f1c1c;
+}
+
+/* Hidden payment detail sections */
+.payment-details {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .payment-container {
+        padding: 20px;
+    }
+
+    .payment-icon {
+        width: 30px;
+    }
+
+    .payment-method label {
+        font-size: 16px;
+    }
+
+    #place-order-btn {
+        font-size: 16px;
+    }
 }

@@ -27,3 +27,9 @@ addToCartButtons.forEach(button => {
     });
 });
 updateCartCount();
+
+document.getElementById('address-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    window.location.href = 'payment.html';
+  });
+  

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart</title>
+    <title>SURAJ MEGA MALL - Your Cart</title>
     <link rel="stylesheet" href="../T-shirt/halfstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         .cart-items {
             max-width: 600px;
@@ -24,16 +25,17 @@
             color: #e63946;
         }
         .clear-cart {
-            background-color: #e63946;
+            background-color: #4b4e53;
             color: #fff;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
             font-size: 1em;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
        .clear-cart:hover {
-background-color: #6c1d24;
+background-color: #060404;
         }
     </style>
 </head>
@@ -55,6 +57,10 @@ background-color: #6c1d24;
 
     <div class="cart-items" id="cart-items"></div>
     <button class="clear-cart" id="clear-cart">Clear Cart</button>
+
+    
+    <a class="place-order" href="../../add-address.html">Place Order</a>
+
 
     <script>
         const cartItemsElement = document.getElementById('cart-items');

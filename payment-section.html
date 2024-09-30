@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="breadcrumbs">
+    <a href="../../index.html">Home</a> -
+    <a href="add-address.html">Back</a> 
+    
+
+
+<div class="payment-container">
+    <h2>Payment Options</h2>
+
+    <!-- Card Payment Section -->
+    <div class="payment-method">
+        <input type="radio" id="card-payment" name="payment-method" checked>
+        <label for="card-payment">
+            <img src="assets/payment/visa.png" alt="Visa" class="payment-icon">
+            <img src="assets/payment/mastercard.png" alt="MasterCard" class="payment-icon">
+            Credit / Debit Card
+        </label>
+        <div class="payment-details card-details">
+            <input type="number" id="card-number" placeholder="Card Number" maxlength="16">
+            <input type="text" id="card-holder" placeholder="Card Holder Name">
+            <div class="expiry-cvv">
+                <input type="number" id="expiry-date" placeholder="MM/YY" maxlength="5">
+                <input type="number" id="cvv" placeholder="CVV" maxlength="3">
+            </div>
+        </div>
+    </div>
+
+    <!-- UPI Payment Section -->
+    <div class="payment-method">
+        <input type="radio" id="upi-payment" name="payment-method">
+        <label for="upi-payment">
+            <img src="assets/payment/upi.png" alt="UPI" class="payment-icon">
+            UPI Payment
+        </label>
+        <div class="payment-details upi-details" style="display: none;">
+            <input type="text" id="upi-id" placeholder="Enter UPI ID">
+        </div>
+    </div>
+
+    <!-- Wallets -->
+    <div class="payment-method">
+        <input type="radio" id="wallet-payment" name="payment-method">
+        <label for="wallet-payment">
+            <img src="assets/payment/paytm.png" alt="Paytm" class="payment-icon">
+            <img src="assets/payment/phonepe.png" alt="Phonepe" class="payment-icon">
+            <img src="assets/payment/googlepay.png" alt="Google Pay" class="payment-icon">
+            Pay with Wallet
+        </label>
+        <div class="payment-details wallet-details" style="display: none;">
+            <p>Select your wallet provider after proceeding.</p>
+        </div>
+    </div>
+
+   
+    <button id="place-order-btn">Place Order</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

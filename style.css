@@ -152,6 +152,7 @@ h2{
 }
 
 /* Form fields styling */
+
 .form-group {
     margin-bottom: 25px;
     text-align: left;
@@ -180,16 +181,18 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #6c63ff; /* Custom focus color */
+    border-color: #6c63ff; 
 }
 
 /* Styling for textarea field */
+
 textarea {
     height: 100px;
     resize: none;
 }
 
 /* Button styling */
+
 .submit-btn {
     background-color: #f93535;
     color: #fff;

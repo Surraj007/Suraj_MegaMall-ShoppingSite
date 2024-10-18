@@ -1,4 +1,4 @@
-// Script to toggle visibility of payment details based on selected payment method
+// here are js of payment details based on selected payment method
 document.addEventListener("DOMContentLoaded", function() {
     const paymentMethods = document.querySelectorAll('input[name="payment-method"]');
     const cardDetails = document.querySelector('.card-details');
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 cardDetails.style.display = 'none';
                 upiDetails.style.display = 'none';
                 walletDetails.style.display = 'block';
+                
             }
         });
     });

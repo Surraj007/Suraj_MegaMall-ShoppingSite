@@ -1,10 +1,32 @@
+
+#navbar-title{
+    color: white;
+    font-size: 45px;
+    font-weight: 550;
+    text-decoration: none;
+}
+.navbar{
+  
+    padding-top: 18px;
+}
+
+header{
+    position: absolute;
+    top: 0%;
+    height: 85px;
+    width: 100% ;
+    background: rgb(82,82,89);
+    background: linear-gradient(0deg, rgba(82,82,89,1) 0%, rgba(6,5,3,1) 89%);
+    text-align: center;
+}
+
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
@@ -46,16 +68,17 @@ input[type="email"] {
 
 .login-button {
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #2f3430;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.2s ease;
 }
 
 .login-button:hover {
-    background-color: #45a049;
+    background-color: #050605;
 }
 
 .error {
@@ -64,7 +87,7 @@ input[type="email"] {
 }
 
 a {
-    color: #4CAF50;
+    color: #363936;
     text-decoration: none;
 }
 

@@ -17,14 +17,6 @@ header{
     text-align: center;
 }
 
-#home-btn{
-position: absolute;
-left: 96%;
-bottom: 93%;
-font-size: 26px;
-color: aliceblue;
-}
-
 .navbar{
     padding-top: 18px;
 }

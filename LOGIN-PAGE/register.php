@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $username, $email, $password);
 
-    if ($stmt->execute()) {
+    if ($stmt->execute()) { 
         echo "Registration successful! <a href='login.php'>Login here</a>";
     } else {
         echo "Error: " . $stmt->error;

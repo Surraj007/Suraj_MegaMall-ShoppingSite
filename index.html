@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,27 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
+<style>
+    /*for login logout register button on home page*/
+    .user-actions {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+    }
+    .user-actions .action-link {
+      color: #333;
+      font-weight: bold;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    .user-actions .action-link:hover {
+      color: #007bff;
+    }
+    </style>
     
 <body>
     <header>
@@ -21,6 +44,17 @@
             <span id="cart-count">0</span> items in Cart
         </a>
     </div>
+<nav>
+    <div class="user-actions">
+        
+        <a href="LOGIN-PAGE/register.php" class="action-link">Register</a>
+          <a href="LOGIN-PAGE/login.php" class="action-link">Login</a>
+          
+          <a href="LOGIN-PAGE/logout.php" class="action-link">Logout</a>
+       
+      </div>
+      
+</nav>
 
 <main>
     <div class="items">

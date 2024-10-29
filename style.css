@@ -308,6 +308,7 @@ footer{
     display: none;
 }
 
+
 /* Responsive design */
 @media (max-width: 600px) {
     .payment-container {
@@ -326,3 +327,4 @@ footer{
         font-size: 16px;
     }
 }
+

@@ -269,7 +269,7 @@ footer{
 }
 
 .payment-details input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ddd;
@@ -302,6 +302,18 @@ footer{
 #place-order-btn:hover {
     background-color: #4f1c1c;
 }
+
+.verify-button{
+    margin: 0px;
+    padding: 5px;
+   position: relative;
+   left: 90%;
+
+    cursor: pointer;
+
+
+}
+
 
 /* Hidden payment detail sections */
 .payment-details {

@@ -91,6 +91,7 @@
     <a class="place-order" href="../../add-address.html">Place Order</a>
 
     <script>
+        //adding each items in cart by clicking add to cart
         const cartItemsElement = document.getElementById('cart-items');
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -100,7 +101,7 @@
                 const cartItemElement = document.createElement('div');
                 cartItemElement.classList.add('cart-item');
                 cartItemElement.innerHTML = `
-                    <img src="${item.image}" alt="${item.name}">
+                  <img src="${item.image}" alt="${item.name}"> 
                     <h3>${item.name}</h3>
                     <span class="price">${item.price}</span>
                     <button class="remove-item" data-index="${index}">Remove</button>

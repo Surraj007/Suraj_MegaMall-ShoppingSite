@@ -5,8 +5,8 @@
 
 #navbar-title{
     color: white;
-    font-size: 45px;
-    font-weight: 550;
+    font-size: 36px;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -15,6 +15,9 @@ header{
     background: rgb(82,82,89);
     background: linear-gradient(0deg, rgba(82,82,89,1) 0%, rgba(6,5,3,1) 89%);
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar{
@@ -30,6 +33,11 @@ header{
 }
 .item-img{
     height: 64px;
+    transition: transform 0.3s ease;
+}
+
+.item-img:hover {
+    transform: scale(1.1);
 }
 .item-tag{
     color: black;

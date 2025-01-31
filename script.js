@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 cardDetails.style.display = 'none';
                 upiDetails.style.display = 'none';
                 walletDetails.style.display = 'block';
-                
             }
         });
     });

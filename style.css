@@ -221,6 +221,43 @@ textarea {
     }
 }
 
+@media (max-width: 768px) {
+    #item-table {
+        display: block;
+        width: 100%;
+    }
+
+    #item-table tr {
+        display: flex;
+        justify-content:center;
+    }
+
+    #item-table td {
+        flex: 1 1 45%;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .item-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-tag {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #item-table td {
+        flex: 1 1 100%;
+    }
+
+    .item-tag {
+        font-size: 12px;
+    }
+}
 
 footer{
     height: 50px;

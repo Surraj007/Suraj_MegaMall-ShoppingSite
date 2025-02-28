@@ -66,6 +66,12 @@
         .place-order:hover {
             background-color: darkred;
         }
+        .total-price {
+            text-align: right;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -86,6 +92,7 @@
     </section>
 
     <div class="cart-items" id="cart-items"></div>
+    <div class="total-price" id="total-price">Total: ₹0.00</div>
     <button class="clear-cart" id="clear-cart">Clear Cart</button>
 
     <a class="place-order" href="../../add-address.html">Place Order</a>
@@ -93,10 +100,12 @@
     <script>
         //adding each items in cart by clicking add to cart
         const cartItemsElement = document.getElementById('cart-items');
+        const totalPriceElement = document.getElementById('total-price');
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         function displayCartItems() {
             cartItemsElement.innerHTML = '';
+            let total = 0;
             cart.forEach((item, index) => {
                 const cartItemElement = document.createElement('div');
                 cartItemElement.classList.add('cart-item');
@@ -108,7 +117,10 @@
                     <button class="remove-item" data-index="${index}">Remove</button>
                 `;
                 cartItemsElement.appendChild(cartItemElement);
+                total += parseFloat(item.price.replace(/[^\d.-]/g, ''));
             });
+
+            totalPriceElement.innerHTML = `Total: ₹${total.toFixed(2)}`;
 
             // Add event listeners to remove buttons
             document.querySelectorAll('.remove-item').forEach(button => {

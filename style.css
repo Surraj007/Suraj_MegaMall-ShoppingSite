@@ -62,7 +62,8 @@ h2{
     margin: auto;
     border: 1px;
     border-collapse: collapse;
-    padding: 12px;
+    padding: 20px;
+
 }
 .sales-table-head{
     background-color:  rgb(42, 77, 122);
